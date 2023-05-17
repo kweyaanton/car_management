@@ -1,0 +1,21 @@
+name: BUild and Deploy 
+
+on:
+ push:
+  branches:
+   - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Configure Docker
+      run: |
+        docker login --username=kweya --password=Xeek^5.SdFT?#@9
+
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with: 
+        push: true
+        tags: kweya/cloud:latest
