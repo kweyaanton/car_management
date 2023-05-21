@@ -81,6 +81,7 @@ WSGI_APPLICATION = 'vehicleservicemanagement.wsgi.application'
 DATABASES = {
  'default': {
     'ENGINE': 'django.db.backends.mysql',
+    # 'NAME': BASE_DIR / 'db.sqlite3',
     'NAME':'librarydata',
     'USER':'root',
     'PASSWORD':'2580kweya',
